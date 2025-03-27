@@ -164,7 +164,7 @@ def calc_prob(X, theta, sigma, angle, scale, translation_x, translation_y):
 
 
 def calc_loss(theta, data, sigma,
-              grid_sizes=(70, 5, 7, 7),
+              grid_sizes=(20, 4, 5, 5),
               grid_ranges=((0, 360), (0, 5), (-0.2, 0.2), (-0.2, 0.2)),
               approx_transforms=None,
               eps=None):
@@ -279,8 +279,8 @@ def parse_args():
     parser.add_argument(
         "--lr_theta",
         type=float,
-        default=1e-3,
-        help="Learning rate for theta (default: 1e-3)."
+        default=5e-4,
+        help="Learning rate for theta (default: 5e-4)."
     )
     parser.add_argument(
         "--lr_sigma",
