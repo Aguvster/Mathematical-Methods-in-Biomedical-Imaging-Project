@@ -5,3 +5,5 @@
 3. Run main.py
 4. Optionally, Run main.py -h to customize parameters
 5. Even more optionally, if you want to try another image, add it to the list IMAGES in create_dataset.py
+
+"theta.png" is the result, and is updated each step of the SGD.
